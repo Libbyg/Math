@@ -24,7 +24,7 @@ public class Plus extends BinaryExpression {
             return new Mult(new Num(2),leftSimplification);
         } else if (checkEqualNum(leftSimplification,0)){
             return rightSimplification;
-        } else if (checkEqualNum(rightSimplification,0)){
+        } else if (checkEqualNum(rightSimplification,0)) {
             return leftSimplification;
         }else {
             return new Plus(leftSimplification,rightSimplification);
